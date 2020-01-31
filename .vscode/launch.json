@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Phone_book",
+            "request": "launch",
+            "mainClass": "Phone_book"
+        }
+    ]
+}
