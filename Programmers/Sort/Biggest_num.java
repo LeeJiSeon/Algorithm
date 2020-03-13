@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 class Biggest_num {
     public static String solution(int[] numbers) {
-        String answer = "";
+
         String[] num = new String[numbers.length];
 
         for(int i = 0 ; i < num.length ; i++)
@@ -18,15 +18,11 @@ class Biggest_num {
         });
 
         return String.join("", num);
-        
-        // for(String s : num)
-        //     System.out.print(s + " ");
 
-        // return answer;
     }
 
     public static void main(String[] args) {
-        int[] numbers = {3, 30, 34, 5, 9};
+        int[] numbers = {0};
         System.out.println(solution(numbers));
     }
 }
