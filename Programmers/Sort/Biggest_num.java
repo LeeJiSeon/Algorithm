@@ -17,7 +17,12 @@ class Biggest_num {
             }
         });
 
-        return String.join("", num);
+        if(num[0].startsWith("0")){
+            return "0";
+        }
+        else{
+            return String.join("", num);
+        }
 
     }
 
