@@ -1,4 +1,5 @@
 //Line
+import java.math.BigInteger;
 import java.util.*;
 class Question5 {
     public static void main(String[] args) {
@@ -21,14 +22,14 @@ class Question5 {
         }
 
         System.out.println(koni_x + koni_y);
-        System.out.println(factorial(koni_x + koni_y) / (factorial(koni_x) * factorial(koni_y)));
+        System.out.println(factorial(koni_x + koni_y).divide(factorial(koni_x).multiply(factorial(koni_y))));
         
     }
 
-    static long factorial(int n) { 
-        if(n <= 1)
-            return n;
-        else
-            return factorial(n-1) * n;
+    static BigInteger factorial(int n) { 
+        BigInteger fac = BigInteger.ONE;
+        for(int i = 0 ; i < n ; i++)
+            fac = fac.multiply(BigInteger.valueOf(i+1));
+        return fac;
     }
 }
