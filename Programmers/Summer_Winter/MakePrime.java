@@ -1,4 +1,3 @@
-import java.util.Stack;
 class MakePrime {
     public int solution(int[] nums) {
         return combination(nums, 0, 0, nums.length, 3, 0);
