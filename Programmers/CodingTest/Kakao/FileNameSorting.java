@@ -1,5 +1,5 @@
 import java.util.*;
-class SortFileName {
+class FileNameSorting {
     public String[] solution(String[] files) {
         Arrays.sort(files, new Comparator<String>() {
                 //음수or0이면 유지, 양수이면 자리교환
