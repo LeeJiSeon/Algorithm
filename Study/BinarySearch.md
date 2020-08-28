@@ -1,8 +1,8 @@
 # 이분탐색
 
 * 자바에서는 **_Arrays.binarySearch(배열, 값)_** 함수를 이용하여 이분탐색을 실행할 수 있다.
-* 함수 내부는 아래와 같이 구현되어 있다.
-* 함수를 사용하지 않더라고 아래와 같이 코드를 작성하면 이분탐색을 쉽게 구현할 수 있다.
+
+#### <**_Arrays.binarySerach()_** 함수 구현코드>
 <pre>
 <code>
 public static int binarySearch(int[] a, int fromIndex, int toIndex, int key) {
@@ -30,3 +30,4 @@ private static int binarySearch0(int[] a, int fromIndex, int toIndex, int key) {
 }
 </code>
 </pre>
+* 함수를 사용하지 않더라고 위와 같이 코드를 작성하면 이분탐색을 쉽게 구현할 수 있다.
