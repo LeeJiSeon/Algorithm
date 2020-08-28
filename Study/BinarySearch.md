@@ -30,4 +30,6 @@ private static int binarySearch0(int[] a, int fromIndex, int toIndex, int key) {
 }
 </code>
 </pre>
+* a의 원소 중 key가 존재하면 그 원소의 인덱스를 (0 또는 양수), 존재하지 않는다면 음수를 반환한다.
+
 * 함수를 사용하지 않더라고 위와 같이 코드를 작성하면 이분탐색을 쉽게 구현할 수 있다.
