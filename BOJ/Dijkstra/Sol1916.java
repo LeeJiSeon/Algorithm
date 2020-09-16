@@ -37,7 +37,7 @@ class Sol1916 {
             for(Node n : adj[node.end]) {
                 if(dist[n.end] > dist[node.end] + n.weight) {
                     dist[n.end] = dist[node.end] + n.weight;
-                    queue.offer(n);
+                    queue.offer(n.end, dist[n.end]);
                 }
             }
         }
