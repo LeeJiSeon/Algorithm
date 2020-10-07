@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-class Main {
+class Sol2042 {
     static long[] arr, tree;
     
     public static void main(String[] args) throws IOException {
