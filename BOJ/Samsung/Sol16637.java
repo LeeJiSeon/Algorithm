@@ -34,9 +34,11 @@ class Sol16637 {
             return;
         }
         
+        //괄호 추가하지 는 경우
         int res1 = calc(result, nums[cnt+1], ops[cnt]);
         dfs(res1, cnt+1);
         
+        //괄호 추가하는 경우
         if(cnt < ops.length - 1) {
             int res2 = calc(nums[cnt+1], nums[cnt+2], ops[cnt+1]);
             dfs(calc(result, res2, ops[cnt]), cnt+2);
