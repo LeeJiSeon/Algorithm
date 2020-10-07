@@ -34,7 +34,7 @@ class Sol16637 {
             return;
         }
         
-        //괄호 추가하지 는 경우
+        //괄호 추가하지 않는 경우
         int res1 = calc(result, nums[cnt+1], ops[cnt]);
         dfs(res1, cnt+1);
         
