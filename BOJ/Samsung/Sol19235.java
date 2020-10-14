@@ -77,7 +77,7 @@ class Sol19235 {
                 moveblue();
             checkweakblue();
         }
-        
+
         System.out.println(score);
         for(int i = 0 ; i < 4 ; i++)
             for(int j = 0 ; j < 4 ; j++) {
@@ -221,6 +221,8 @@ class Sol19235 {
 					}
 				}
 			}
-		}        
+		}
+        
     }
+
 }
