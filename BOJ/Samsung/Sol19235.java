@@ -130,32 +130,31 @@ class Sol19235 {
     }
     
     private static void movegreen() {
-		for (int i = 4; i >= 0; i--) {
-			for (int j = 0; j < 4; j++) {
-				if (green[i][j] == 1) {
-					int r = i;
-					
-					while (r + 1 < 6 && green[r + 1][j] == 0)   r++;
-					
-					if (r != i) {
-						green[r][j] = green[i][j];
-						green[i][j] = 0;
-					}
-				}
-				else if (j < 3 && green[i][j] == 2 && green[i][j + 1] == 2) {
-					int r = i;
-					
-					while (r + 1 < 6 && green[r + 1][j] == 0 && green[r + 1][j + 1] == 0)   r++;
-					
-					if (r != i) {
-						green[r][j] = green[i][j];
-						green[r][j + 1] = green[i][j + 1];
-						green[i][j] = 0;
-						green[i][j + 1] = 0;
-					}
-				}
-			}
-		}
+        for (int i = 4; i >= 0; i--) {
+            for (int j = 0; j < 4; j++) {
+                if (green[i][j] == 1) {
+                    int r = i;
+                    
+                    while (r + 1 < 6 && green[r + 1][j] == 0)   r++;
+                    
+                    if (r != i) {
+                        green[r][j] = green[i][j];
+                        green[i][j] = 0;
+                    }
+                } else if (j < 3 && green[i][j] == 2 && green[i][j + 1] == 2) {
+                    int r = i;
+                    
+                    while (r + 1 < 6 && green[r + 1][j] == 0 && green[r + 1][j + 1] == 0)   r++;
+                    
+                    if (r != i) {
+                        green[r][j] = green[i][j];
+                        green[r][j + 1] = green[i][j + 1];
+                        green[i][j] = 0;
+                        green[i][j + 1] = 0;
+                    }
+                }
+            }
+        }
     }
     
     private static void checkweakblue() {
@@ -197,30 +196,29 @@ class Sol19235 {
     
     private static void moveblue() {
         for (int j = 4; j >= 0; j--) {
-			for (int i = 0; i < 4; i++) {
-				if (blue[i][j] == 1) {
-					int c = j;
-					
-					while (c + 1 < 6 && blue[i][c + 1] == 0) c++;
-					
-					if (c != j) {
-						blue[i][c] = blue[i][j];
-						blue[i][j] = 0;
-					}
-				}
-				else if (i < 3 && blue[i][j] == 2 && blue[i + 1][j] == 2) {
-					int c = j;
-					
-					while (c + 1 < 6 && blue[i][c + 1] == 0 && blue[i + 1][c + 1] == 0) c++;
-					
-					if (c != j) {
-						blue[i][c] = blue[i][j];
-						blue[i + 1][c] = blue[i + 1][j];
-						blue[i][j] = 0;
-						blue[i + 1][j] = 0;
-					}
-				}
-			}
-		}        
+            for (int i = 0; i < 4; i++) {
+                if (blue[i][j] == 1) {
+                    int c = j;
+                    
+                    while (c + 1 < 6 && blue[i][c + 1] == 0) c++;
+                    
+                    if (c != j) {
+                        blue[i][c] = blue[i][j];
+                        blue[i][j] = 0;
+                    }
+                } else if(i < 3 && blue[i][j] == 2 && blue[i + 1][j] == 2) {
+                    int c = j;
+                    
+                    while (c + 1 < 6 && blue[i][c + 1] == 0 && blue[i + 1][c + 1] == 0) c++;
+                    
+                    if (c != j) {
+                        blue[i][c] = blue[i][j];
+                        blue[i + 1][c] = blue[i + 1][j];
+                        blue[i][j] = 0;
+                        blue[i + 1][j] = 0;
+                    }
+                }
+            }
+        }
     }
 }
