@@ -28,7 +28,7 @@ public class Sol4485 {
 	        }
 	        
 	        System.out.println("Problem " + cnt + ": " + bfs());
-            cnt++;
+            	cnt++;
 	    }
 	    br.close();
 	}
