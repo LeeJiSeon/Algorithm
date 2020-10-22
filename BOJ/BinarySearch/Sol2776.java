@@ -17,7 +17,7 @@ public class Sol2776 {
 		    StringTokenizer st = new StringTokenizer(br.readLine());
 		    for(int i = 0; i < N; i++)
 		        note1[i] = Integer.parseInt(st.nextToken());
-	        Arrays.sort(note1);
+		    Arrays.sort(note1);
 		    
 		    int M = Integer.parseInt(br.readLine());
 		    st = new StringTokenizer(br.readLine());
@@ -37,7 +37,7 @@ public class Sol2776 {
 		        }
 		        
 		        sb.append(val);
-                sb.append("\n");
+		        sb.append("\n");
 		        
 		    }
 		}
